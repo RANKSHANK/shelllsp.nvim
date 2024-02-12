@@ -1,4 +1,4 @@
-local M = {
+local M = { --TODO: import this
     config = {
         servers = {
             ansiblels = {
@@ -284,6 +284,9 @@ function M.check_config(_)
 end
 
 function M.setup(config)
+    if M.missing("nix") then
+        return
+    end
     if M.check_config(config) then
         M.config = vim.tbl_deep_extend("force", M.config, config)
     else
@@ -291,13 +294,6 @@ function M.setup(config)
         "shelllsp failed to load user configuration, using the to default",
         vim.log.levels.WARN
         )
-    end
-    if M.missing("nix-shell") then
-        vim.notify(
-        "nix-shell is unavailable, skipping shelllsp init.",
-        vim.log.levels.WARN
-        )
-        return
     end
     local ok, err = pcall(function()
         local util = require("lspconfig.util")
@@ -313,7 +309,7 @@ function M.setup(config)
                     "--extra-experimental-features",
                     "nix-command",
                     "run",
-                    "nixpkgs#" .. server.pkg,
+                    "nixpkgs#" .. server.pkg, --TODO: Maybe allow custom sources
                 }
                 if server.cmd then
                     cmd = server.cmd
@@ -322,10 +318,7 @@ function M.setup(config)
                     table.insert(new_cmd, val)
                 end
                 cfg.cmd = new_cmd
-                vim.notify("added cmd alias: " .. new_cmd, vim.log.levels.WARN)
             else
-                vim.notify(server .. " is available, skipping nix-shell")
-            end
         end)
     end)
     if not ok then
@@ -336,8 +329,7 @@ function M.setup(config)
     end
 end
 
-
-function M.missing(pkg)
+function M.missing(pkg) --WARN: smells non cross platform
     return os.execute("command -v " .. pkg .. " >/dev/null 2>&1") ~= 0
 end
 
