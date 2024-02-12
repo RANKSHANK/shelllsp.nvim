@@ -291,8 +291,8 @@ function M.setup(config)
         M.config = vim.tbl_deep_extend("force", M.config, config)
     else
         vim.notify(
-        "shelllsp failed to load user configuration, using the to default",
-        vim.log.levels.WARN
+            "shelllsp failed to load user configuration, using the to default",
+            vim.log.levels.WARN
         )
     end
     local ok, err = pcall(function()
@@ -304,7 +304,7 @@ function M.setup(config)
             end
             local cmd = cfg.cmd
             if M.missing(cmd[1]) then
-                local new_cmd = { 
+                local new_cmd = {
                     "nix",
                     "--extra-experimental-features",
                     "nix-command",
@@ -319,13 +319,11 @@ function M.setup(config)
                 end
                 cfg.cmd = new_cmd
             else
+            end
         end)
     end)
     if not ok then
-        vim.notify(
-            err,
-            vim.log.levels.ERROR
-        )
+        vim.notify(err, vim.log.levels.ERROR)
     end
 end
 
