@@ -2,274 +2,274 @@ local M = {
     config = {
         servers = {
             ansiblels = {
-                pkgs = "ansible-language-server",
+                pkg = "ansible-language-server",
             },
             arduino_language_server = {
-                pkgs = "arduino_language_server",
+                pkg = "arduino_language_server",
             },
             asm_lsp = {
-                pkgs = "asm-lsp",
+                pkg = "asm-lsp",
             },
             bashls = {
-                pkgs = "nodePackages.bash-language-server",
+                pkg = "nodePackages.bash-language-server",
             },
             beancount = {
-                pkgs = "beancount-language-server",
+                pkg = "beancount-language-server",
             },
             bufls = {
-                pkgs = "buf-language-server",
+                pkg = "buf-language-server",
             },
             ccls = {
-                pkgs = "ccls",
+                pkg = "ccls",
             },
             clangd = {
-                pkgs = "clang-tools",
+                pkg = "clang-tools",
             },
             clojure = {
-                pkgs = "clojure-lsp",
+                pkg = "clojure-lsp",
             },
             cmake = {
-                pkgs = "cmake-language-server",
+                pkg = "cmake-language-server",
             },
             crystalline = {
-                pkgs = "crystalline",
+                pkg = "crystalline",
             },
             csharp_ls = {
-                pkgs = "csharp-ls",
+                pkg = "csharp-ls",
             },
             dagger = {
-                pkgs = "cuelsp",
+                pkg = "cuelsp",
             },
             dhall_lsp_server = {
-                pkgs = "dhall-lsp-server",
+                pkg = "dhall-lsp-server",
             },
             diagnosticls = {
-                pkgs = "nodePackages.diagnostic-languageserver",
+                pkg = "nodePackages.diagnostic-languageserver",
             },
             docker_compose_language_service = {
-                pkgs = "docker-compose-language-service",
+                pkg = "docker-compose-language-service",
             },
             dockerls = {
-                pkgs = "docker-language-server-nodejs",
+                pkg = "docker-language-server-nodejs",
             },
             dotls = {
-                pkgs = "dot-language-server",
+                pkg = "dot-language-server",
             },
             efm = {
-                pkgs = "efm-langserver",
+                pkg = "efm-langserver",
             },
             elixirls = {
-                pkgs = "elixir-ls",
+                pkg = "elixir-ls",
             },
             elmls = {
-                pkgs = "elmPackages.elm-language-server",
+                pkg = "elmPackages.elm-language-server",
             },
             emmet_language_server = {
-                pkgs = "emmet-language-server",
+                pkg = "emmet-language-server",
             },
             emmet_ls = {
-                pkgs = "emmet-ls",
+                pkg = "emmet-ls",
             },
             erlangls = {
-                pkgs = "erlang-ls",
+                pkg = "erlang-ls",
             },
             fennel_ls = {
-                pkgs = "fennel-ls",
+                pkg = "fennel-ls",
             },
             fortls = {
-                pkgs = "fortls",
+                pkg = "fortls",
             },
             glslls = {
-                pkgs = "glslls",
+                pkg = "glslls",
             },
             golangci_lint_ls = {
-                pkgs = "gloangci-lint-langserver",
+                pkg = "gloangci-lint-langserver",
             },
             gopls = {
-                pkgs = "gopls",
+                pkg = "gopls",
             },
             grammarly = {
-                pkgs = "nodePackages.grammarly-languageserver",
+                pkg = "nodePackages.grammarly-languageserver",
             },
             graphql = {
-                pkgs = "nodePackages.graphql-language-service-cli",
+                pkg = "nodePackages.graphql-language-service-cli",
             },
             helm_ls = {
-                pkgs = "helm-ls",
+                pkg = "helm-ls",
             },
             hls = {
-                pkgs = "haskell-language-server",
+                pkg = "haskell-language-server",
             },
             htmx = {
-                pkgs = "htmx-lsp",
+                pkg = "htmx-lsp",
             },
             intelephense = {
-                pkgs = "nodePackages.intelephense",
+                pkg = "nodePackages.intelephense",
             },
             java_language_server = {
-                pkgs = "java-language-server",
+                pkg = "java-language-server",
             },
             jdtls = {
-                pkgs = "jdt-language-server",
+                pkg = "jdt-language-server",
             },
             jedi_language_server = {
-                pkgs = "python312Packages.jedi-language-server",
+                pkg = "python312Packages.jedi-language-server",
             },
             jqls = {
-                pkgs = "jq-lsp",
+                pkg = "jq-lsp",
             },
             jsonnet_ls = {
-                pkgs = "jsonnet-language-server",
+                pkg = "jsonnet-language-server",
             },
             kotlin_language_server = {
-                pkgs = "kotlin-language-server",
+                pkg = "kotlin-language-server",
             },
             lemminx = {
-                pkgs = "lemminx",
+                pkg = "lemminx",
             },
             ltex = {
-                pkgs = "ltex-ls",
+                pkg = "ltex-ls",
             },
             lua_ls = {
-                pkgs = "lua-language-server",
+                pkg = "lua-language-server",
             },
             marksman = {
-                pkgs = "marksman",
+                pkg = "marksman",
             },
             matlab_ls = {
-                pkgs = "matlab-language-server",
+                pkg = "matlab-language-server",
             },
             metals = {
-                pkgs = "metals",
+                pkg = "metals",
             },
             millet = {
-                pkgs = "millet",
+                pkg = "millet",
             },
             neocmake = {
-                pkgs = "neocmakelsp",
+                pkg = "neocmakelsp",
             },
             nickel_ls = {
-                pkgs = "nls",
+                pkg = "nls",
             },
             nil_ls = {
-                pkgs = "nil",
+                pkg = "nil",
             },
             nimls = {
-                pkgs = "nimlsp",
+                pkg = "nimlsp",
             },
             nixd = {
-                pkgs = "nixd",
+                pkg = "nixd",
             },
             ocamllsp = {
-                pkgs = "ocamllsp",
+                pkg = "ocamllsp",
             },
             ols = {
-                pkgs = "ols",
+                pkg = "ols",
             },
             openscad_lsp = {
-                pkgs = "openscad-lsp",
+                pkg = "openscad-lsp",
             },
             perlnavigator = {
-                pkgs = "perlnavigator",
+                pkg = "perlnavigator",
             },
             phan = {
-                pkgs = "php83Packages.phan",
+                pkg = "php83Packages.phan",
             },
             phpactor = {
-                pkgs = "phpactor",
+                pkg = "phpactor",
             },
             postgres_lsp = {
-                pkgs = "postgres-lsp",
+                pkg = "postgres-lsp",
             },
             purescriptls = {
-                pkgs = "nodePackages.purescript-language-server",
+                pkg = "nodePackages.purescript-language-server",
             },
             pylsp = {
-                pkgs = "python312Packages.python-lsp-server",
+                pkg = "python312Packages.python-lsp-server",
             },
             pylyzer = {
-                pkgs = "pylyzer",
+                pkg = "pylyzer",
             },
             pyright = {
-                pkgs = "nodePackages.pyright",
+                pkg = "nodePackages.pyright",
             },
             regols = {
-                pkgs = "regols",
+                pkg = "regols",
             },
             rnix = {
-                pkgs = "rnix-lsp",
+                pkg = "rnix-lsp",
             },
             ruff_lsp = {
-                pkgs = "python311Packages.ruff-lsp",
+                pkg = "python311Packages.ruff-lsp",
             },
             rust_analyzer = {
-                pkgs = "rust-analyzer",
+                pkg = "rust-analyzer",
             },
             scry = {
-                pkgs = "scry",
+                pkg = "scry",
             },
             slint_lsp = {
-                pkgs = "slint-lsp",
+                pkg = "slint-lsp",
             },
             solargraph = {
-                pkgs = "rubyPackages_3_2.solargraph",
+                pkg = "rubyPackages_3_2.solargraph",
             },
             sourcekit = {
-                pkgs = "sourcekit-lsp",
+                pkg = "sourcekit-lsp",
             },
             sqls = {
-                pkgs = "sqls",
+                pkg = "sqls",
             },
             statix = {
-                pkgs = "statix",
+                pkg = "statix",
             },
             svelte = {
-                pkgs = "nodePackages.scelte-language-server",
+                pkg = "nodePackages.scelte-language-server",
             },
             svls = {
-                pkgs = "svls",
+                pkg = "svls",
             },
             teal_ls = {
-                pkgs = "luajitPackages.teal-language-server",
+                pkg = "luajitPackages.teal-language-server",
             },
             terraform_ls = {
-                pkgs = "terraform-ls",
-            }
+                pkg = "terraform-ls",
+            },
             terraform_lsp = {
-                pkgs = "terraform-lsp",
+                pkg = "terraform-lsp",
             },
             tsserver = {
-                pkgs = "nodePackages.typescript-language-server",
+                pkg = "nodePackages.typescript-language-server",
             },
             typos_lsp = {
-                pkgs = "typos",
+                pkg = "typos",
             },
             typst_lsp = {
-                pkgs = "typst-lsp",
+                pkg = "typst-lsp",
             },
             vala_ls = {
-                pkgs = "vala-language-server",
+                pkg = "vala-language-server",
             },
             verible = {
-                pkgs = "verible",
+                pkg = "verible",
             },
             vhdl_ls = {
-                pkgs = "vhdl-ls",
+                pkg = "vhdl-ls",
             },
             vimls = {
-                pkgs = "nodePackages.vim-language-server",
+                pkg = "nodePackages.vim-language-server",
             },
             volar = {
-                pkgs = "nodePackages.volar",
+                pkg = "nodePackages.volar",
             },
             vuels = {
-                pkgs = "nodePackages.vls",
+                pkg = "nodePackages.vls",
             },
             yamlls = {
-                pkgs = "yaml-language-server",
+                pkg = "yaml-language-server",
             },
             zls = {
-                pkgs = "zls",
+                pkg = "zls",
             },
         }
     }
@@ -284,57 +284,58 @@ function M.check_config(_)
 end
 
 function M.setup(config)
-    if M.missing("nix-shell") then
-        vim.notify(
-            "nix-shell is unavailable, skipping shelllsp init.",
-            vim.log.levels.WARN
-        )
-        return
-    end
     if M.check_config(config) then
         M.config = vim.tbl_deep_extend("force", M.config, config)
     else
         vim.notify(
-            "shelllsp failed to load user configuration, using the to default",
-            vim.log.levels.WARN
+        "shelllsp failed to load user configuration, using the to default",
+        vim.log.levels.WARN
         )
     end
-    local lspconfig = require("lspconfig")
-    local util = lspconfig.util
-    util.on_setup = util.add_hook_after(util.on_setup, M.wrap_cmd)
-end
-
-function M.wrap_cmd(new_cfg)
-    local cmd = new_cfg.cmd
-    if M.missing(cmd[1]) then
-        local server = M.config.servers[new_cfg.name] or {}
-        local new_cmd = { "nix-shell", "-p" }
-        local pkgs = server.pkgs or cmd[1]
-        if type(pkgs) == "table" then
-            for _, pkg in ipairs(pkgs) do
-                table.insert(new_cmd, pkg)
+    if M.missing("nix-shell") then
+        vim.notify(
+        "nix-shell is unavailable, skipping shelllsp init.",
+        vim.log.levels.WARN
+        )
+        return
+    end
+    local ok, err = pcall(function()
+        local util = require("lspconfig.util")
+        util.on_setup = util.add_hook_before(util.on_setup, function(cfg, user_cfg)
+            local server = M.config.servers[cfg.name]
+            if not server then
+                return
             end
-        else
-            table.insert(new_cmd, pkgs)
-        end
-        table.insert(new_cmd, "--command")
-        if server.cmd then
-            cmd = server.cmd
-        end
-        local exec_str = '"'
-        for index, val in ipairs(cmd) do
-            exec_str = exec_str .. val
-            if index ~= #cmd then
-                exec_str = exec_str .. ' '
+            local cmd = cfg.cmd
+            if M.missing(cmd[1]) then
+                local new_cmd = { 
+                    "nix",
+                    "--extra-experimental-features",
+                    "nix-command",
+                    "run",
+                    "nixpkgs#" .. server.pkg,
+                }
+                if server.cmd then
+                    cmd = server.cmd
+                end
+                for _, val in ipairs(cmd) do
+                    table.insert(new_cmd, val)
+                end
+                cfg.cmd = new_cmd
+                vim.notify("added cmd alias: " .. new_cmd, vim.log.levels.WARN)
+            else
+                vim.notify(server .. " is available, skipping nix-shell")
             end
-        end
-        exec_str = exec_str .. '"'
-        table.insert(new_cmd, exec_str)
-        new_cfg.cmd = new_cmd
-    else
-        vim.notify(new_cfg.name .. " is available, skipping nix-shell")
+        end)
+    end)
+    if not ok then
+        vim.notify(
+            err,
+            vim.log.levels.ERROR
+        )
     end
 end
+
 
 function M.missing(pkg)
     return os.execute("command -v " .. pkg .. " >/dev/null 2>&1") ~= 0
