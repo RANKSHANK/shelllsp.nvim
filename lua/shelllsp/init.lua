@@ -291,7 +291,7 @@ function M.setup(config)
         M.config = vim.tbl_deep_extend("force", M.config, config)
     else
         vim.notify(
-            "shelllsp failed to load user configuration, using the to default",
+            "shelllsp failed to load user configuration",
             vim.log.levels.WARN
         )
     end
